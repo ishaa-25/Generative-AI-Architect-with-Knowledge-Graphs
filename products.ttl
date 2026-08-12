@@ -1,0 +1,18 @@
+@prefix ex: <http://example.org/products#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:P001 a ex:Product ;
+    ex:category "Electronics" ;
+    ex:name "Laptop" ;
+    ex:price 1200.0 .
+
+ex:P002 a ex:Product ;
+    ex:category "Furniture" ;
+    ex:name "Chair" ;
+    ex:price 200.0 .
+
+ex:P003 a ex:Product ;
+    ex:category "Electronics" ;
+    ex:name "Smartphone" ;
+    ex:price 800.0 .
+

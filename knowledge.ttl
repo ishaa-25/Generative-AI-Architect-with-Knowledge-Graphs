@@ -1,0 +1,12 @@
+@prefix ns1: <http://example.org/> .
+
+ns1:Doc0 a ns1:Policy ;
+    ns1:category "Healthcare" ;
+    ns1:region "US" ;
+    ns1:text "The US healthcare system provides benefits such as Medicare for seniors and Medicaid for low-income families." .
+
+ns1:Doc1 a ns1:Policy ;
+    ns1:category "Healthcare" ;
+    ns1:region "US" ;
+    ns1:text "Health insurance in the US covers essential benefits including preventive care, emergency services, and prescription drugs." .
+

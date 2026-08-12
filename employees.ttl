@@ -1,0 +1,12 @@
+@prefix ex: <http://example.org/employees#> .
+
+ex:E001 a ex:Employee ;
+    ex:department "R&D" ;
+    ex:name "Alice" ;
+    ex:role "Engineer" .
+
+ex:E002 a ex:Employee ;
+    ex:department "HR" ;
+    ex:name "Bob" ;
+    ex:role "Manager" .
+
