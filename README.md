@@ -1,4 +1,4 @@
-# Autonomous AML/Fraud Copilot (Lab 10)
+# Autonomous AML/Fraud Copilot
 
 An agentic AML and fraud investigation copilot that integrates RDF graph analytics, semantic vector retrieval (FAISS), and multi-agent LLM orchestration to analyze suspicious accounts and generate structured Suspicious Activity Report (SAR) narratives.
 
