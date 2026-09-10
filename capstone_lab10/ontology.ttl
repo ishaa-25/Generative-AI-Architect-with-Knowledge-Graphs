@@ -1,0 +1,35 @@
+@prefix ex: <http://fintech.example.org/aml#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Classes
+ex:Account a rdfs:Class .
+ex:Device a rdfs:Class .
+ex:Transaction a rdfs:Class .
+
+# Properties
+ex:sharesDeviceWith a rdf:Property .
+ex:transferredTo a rdf:Property .
+ex:hasAmount a rdf:Property .
+ex:flaggedMule a rdf:Property .
+
+# Graph Individuals (Suspicious Mule Ring Linked by Device Fingerprint)
+ex:Device_DEV992 a ex:Device ;
+    rdfs:label "iPhone 13 (Fingerprint DEV992)" .
+
+ex:ACC_1001 a ex:Account ;
+    rdfs:label "Account 1001 (Primary Originator)" ;
+    ex:sharesDeviceWith ex:Device_DEV992 ;
+    ex:transferredTo ex:ACC_1002 ;
+    ex:flaggedMule true .
+
+ex:ACC_1002 a ex:Account ;
+    rdfs:label "Account 1002 (Intermediary Mule)" ;
+    ex:sharesDeviceWith ex:Device_DEV992 ;
+    ex:transferredTo ex:ACC_1003 ;
+    ex:flaggedMule true .
+
+ex:ACC_1003 a ex:Account ;
+    rdfs:label "Account 1003 (Offshore Beneficiary)" ;
+    ex:flaggedMule true .
