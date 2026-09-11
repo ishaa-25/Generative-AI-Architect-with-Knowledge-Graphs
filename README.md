@@ -8,7 +8,7 @@ An agentic AML and fraud investigation copilot that integrates RDF graph analyti
 
 ![System Architecture](images/architecture1.png)
 
-<img src="images/architecture2.png" width= "100" style="transform: rotate(-90deg);" />
+<img src="images/architecture2.png" style="transform: rotate(-90deg);" />
 
 
 The workflow consists of three specialized agents executed in sequence:
