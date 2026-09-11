@@ -8,6 +8,7 @@ An agentic AML and fraud investigation copilot that integrates RDF graph analyti
 
 ![System Architecture](images/architecture1.png)
 ![System Architecture](images/architecture2.png)
+<img src="images/architecture2.png" alt="Architecture Diagram" width="70%" />
 The workflow consists of three specialized agents executed in sequence:
 1. **Planner Agent:** Formulates the investigative strategy based on user input.
 2. **Retriever Agent:** Executes hybrid queries:
